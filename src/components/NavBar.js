@@ -5,18 +5,19 @@ const NavBar = () => {
 
   return (
     <div className="navbar">
-     <NavLink
+      
+     <li><NavLink
        to="/"
-     >Home</NavLink>
-     <NavLink
+     >Home</NavLink></li>
+     <li><NavLink
        to="/movies"
-     >Movies</NavLink>
-     <NavLink
+     >Movies</NavLink></li>
+     <li><NavLink
        to="/actors"
-     >Actors</NavLink>
-     <NavLink
+     >Actors</NavLink></li>
+     <li><NavLink
        to="/directors"
-     >Directors</NavLink>
+     >Directors</NavLink></li>
    </div>
   ); 
 };
