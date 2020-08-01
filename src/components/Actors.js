@@ -1,10 +1,19 @@
 import React from 'react';
 import { actors } from '../data';
+import { act } from 'react-test-renderer';
 
 const Actors = () => {
+
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Actors Page</h1>
+        {actors.map((actor,key) => 
+        <div className='actor'>{actor.name} 
+        {actor.movies.map((movie, key) => 
+          <p>{movie}</p>
+          )}
+        
+        </div>)}
     </div>
   );
 };
